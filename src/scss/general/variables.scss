@@ -1,0 +1,28 @@
+// Colors
+$white: #fff;
+$off-white: #fefefe;
+$off-black: #3a3a3a;
+$card-border-color: #e1e4e6;
+$card-background-color: #FDC9C2;
+$primary-accent: #db7093;
+$secondary-accent: #BDDE5C;
+$site-background-color: #ececec;
+$background-orange: #ff9966;
+$background-red: #ff5e62;
+// Fonts
+$bodyfont-size: 16px;
+$bodyfont-weight: normal;
+$bodycolor: $off-black;
+$main-heading-color: $white;
+$heading-color: $off-black;
+$header-bg-color: $off-black;
+// Layout   
+$main-container-width: 1200px;
+$header-height: 60px;
+// Breakpoints
+$tablet-breakpoint: 1199px;
+$mobile-breakpoint: 767px;
+$small-mobile-breakpoint: 450px;
+// Shadow
+$card-shadow: 0 10px 20px rgba(0, 0, 0, 0.19),
+0 6px 6px rgba(0, 0, 0, 0.23);

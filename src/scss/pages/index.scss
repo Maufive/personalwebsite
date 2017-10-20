@@ -1,0 +1,52 @@
+@import '../general/variables';
+
+.page-wrapper {
+    min-height: 100vh;
+    height: 100%;
+    background: linear-gradient(to bottom right, $background-orange, $background-red);
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    background: $card-background-color;
+    margin: 10vh auto;
+    height: 400px;
+    width: 60%;
+    box-shadow: $card-shadow;
+    color: $off-black;
+    animation: slideRight 1s;
+    animation-fill-mode: both;
+}
+
+.avatar {
+    background: $off-white;
+    height: 150px;
+    width: 150px;
+    border-radius: 200px;
+    animation: portraitSlideLeft 0.8s 0.5s;
+    animation-fill-mode: both;
+}
+
+.avocado {
+    padding: 20px 0;
+}
+
+.bio {
+    padding: 20px 40px;
+    width: 500px;
+    h1 {
+        margin-bottom: 10px;
+    }
+    .contact {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        svg {
+            margin: 0 5px;
+            height: 2em;
+            width: 2em;
+        }
+    }
+}

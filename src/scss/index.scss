@@ -1,0 +1,18 @@
+//===================//
+// Main SCSS imports //
+//===================//
+
+// GENRAL STYLES
+@import 'general/setup';
+@import 'general/variables';
+@import 'general/animations';
+
+// LAYOUT STYLES
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/post';
+
+// PAGE STYLES
+@import 'pages/index';
+@import 'pages/about';
+@import 'pages/projects';

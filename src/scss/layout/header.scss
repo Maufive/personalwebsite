@@ -1,0 +1,39 @@
+@import '../general/variables';
+
+.Header {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    height: $header-height;
+    width: 100%;
+    border-bottom: 4px solid rgba($off-black, 0.8);
+    background: rgba(255,255,255, 0.6);
+    padding: 0 30px;
+    box-sizing: border-box;
+    animation: slideDown 1s;
+    animation-fill-mode: both;
+}
+
+.Navigation {
+    width: 250px;
+    .nav-list {
+        margin: 0;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        list-style: none;
+        .nav-item {
+            margin: 0;
+        }
+    }
+}
+
+.brand-name {
+    font-weight: 400;
+    font-size: 20px; 
+    letter-spacing: 1px;   
+}
+
+a, a:visited {
+    color: $off-black;
+}
