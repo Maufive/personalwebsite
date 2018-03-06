@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+@import url('https://fonts.googleapis.com/css?family=Lato:100,200,300,400,700');
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto+Slab:400,700');
 html {
@@ -9,7 +9,7 @@ html {
 body {
     box-sizing: border-box;
     margin: 0;
-    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
 }
 
 article,
@@ -264,6 +264,11 @@ img {
     margin-bottom: 1.45rem;
 }
 
+h1, h2, h3 {
+    font-family: 'Montserrat';
+    color: #3a3a3a;
+}
+
 h1 {
     margin-left: 0;
     margin-right: 0;
@@ -366,16 +371,17 @@ hgroup {
 }
 
 ul {
-    margin-left: 1.45rem;
+    margin-left: 0;
     margin-right: 0;
     margin-top: 0;
     padding-bottom: 0;
     padding-left: 0;
     padding-right: 0;
     padding-top: 0;
-    margin-bottom: 1.45rem;
+    margin-bottom: 0;
     list-style-position: outside;
     list-style-image: none;
+    list-style: none;
 }
 
 ol {

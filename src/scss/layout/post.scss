@@ -1,0 +1,31 @@
+// Blogpost
+.post-container {
+  width: 1000px;
+  padding: 0 50px;
+  a {
+    color: $off-white;
+  }
+}
+
+.tags-container {
+  flex-direction: column;
+  margin-bottom: 1.3rem;
+  span {
+    margin: 0px 5px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .post-container {
+    width: 100%;
+  }
+  iframe {
+    width: 100%;
+  }
+}
+
+@media (max-width: 630px) {
+  .blog-page {
+    padding: 10px!important;
+  }
+}

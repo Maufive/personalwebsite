@@ -14,7 +14,7 @@ const ListLink = props => (
 const Navigation = () => (
   <nav className="Navigation">
     <ul className="nav-list">
-      <ListLink to="/projects/">PROJEKT</ListLink>
+      <ListLink to="/portfolio/">PORTFOLIO</ListLink>
       <ListLink to="/about/">OM MIG</ListLink>
       <ListLink to="/blog/">BLOG</ListLink>
     </ul>

@@ -1,0 +1,51 @@
+.container {
+  padding: 25px;
+  margin: 0 auto;
+  line-height: 1.5;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.flex {
+  display: flex;
+}
+
+.center {
+  justify-content: center;
+  align-items: center;
+}
+
+.col {
+  flex-direction: column;
+}
+
+.col-2 {
+  width: 16.666%
+}
+.col-4 {
+  width: 33.333%;
+}
+.col-5 {
+  width: 41.666%;
+}
+.col-6 {
+  width: 50%;
+}
+.col-8 {
+  width: 66.666%;
+}
+.col-10 {
+  width: 83.333%;
+}
+.col-12 {
+  width: 100%;
+}
+
+.main-heading {
+  font-family: 'Montserrat';
+  margin-bottom: 5px;
+}
+
+.sub-heading {
+  font-family: 'Lato';
+  font-weight: 400;
+}

@@ -16,7 +16,12 @@
     "gatsby-source-filesystem": "^1.5.5",
     "gatsby-transformer-remark": "^1.7.17",
     "glamorous": "^4.9.7",
+    "react-animate-on-scroll": "^2.0.2",
     "react-icons": "^2.2.7",
     "typography-theme-kirkham": "^0.16.3"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.2.3",
+    "eslint": "^3.19.0"
   }
 }

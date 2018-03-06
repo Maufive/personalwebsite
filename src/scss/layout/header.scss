@@ -15,7 +15,7 @@
 }
 
 .Navigation {
-    width: 250px;
+    width: 300px;
     .nav-list {
         margin: 0;
         display: flex;
@@ -25,13 +25,24 @@
         .nav-item {
             margin: 0;
         }
+        .nav-item a {
+            margin: 0 10px;
+            transition: all 0.2s ease-out;
+        }
+        .nav-item a:hover {
+            color: palevioletred;
+        }
     }
 }
 
 .brand-name {
     font-weight: 400;
     font-size: 20px; 
-    letter-spacing: 1px;   
+    letter-spacing: 1px;
+    transition: all 0.2s ease-out;
+}
+.brand-name:hover {
+    color: palevioletred;
 }
 
 a, a:visited {

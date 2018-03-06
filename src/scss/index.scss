@@ -6,6 +6,7 @@
 @import 'general/setup';
 @import 'general/variables';
 @import 'general/animations';
+@import 'general/layout';
 
 // LAYOUT STYLES
 @import 'layout/header';
@@ -16,3 +17,7 @@
 @import 'pages/index';
 @import 'pages/about';
 @import 'pages/projects';
+@import 'pages/blog';
+
+
+@import 'general/responsive';
