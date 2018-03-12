@@ -36,7 +36,7 @@ class ContactForm extends Component {
 			>
 				<div className={"contact-form-section"}>
 					<label>Ditt namn:</label>
-					<input required type="text" name="name" onChance={this.handleChange}/>
+					<input required type="text" name="name" onChange={this.handleChange}/>
 				</div>
 				<div className={"contact-form-section"}>
 					<label>Din mail:</label>

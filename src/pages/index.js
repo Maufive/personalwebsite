@@ -1,4 +1,5 @@
 import React from "react";
+import Img from "gatsby-image";
 import FaGithub from "react-icons/lib/fa/github";
 import FaFacebook from "react-icons/lib/fa/facebook";
 import FaTwitter from "react-icons/lib/fa/twitter";
@@ -7,13 +8,17 @@ import FaCheck from "react-icons/lib/fa/check";
 import Profilbild from "../img/profil.jpg";
 import ContactForm from "../layouts/ContactForm";
 
-const MainCard = () => {
+const MainCard = ({ data }) => {
 	return (
 		<div className="index-page">
 			<div className={"container col flex main-card"}>
 				<div className="bio-container col-12 flex">
-					<div className={"avatar-container col-3"}>
-						<img className={"avatar"} src={Profilbild} />
+					<div className={"avatar-container"}>
+						<Img
+							className={'avatar'}
+							sizes={data.profileImage.sizes}
+						/>
+						{console.log(data.profileImage.sizes)}
 					</div>
 					<div className={"col flex col-8"}>
 						<h1 className={"main-heading"}>Niklas Albinsson</h1>
@@ -25,7 +30,7 @@ const MainCard = () => {
 							skapar hemsidor, appar och annat web-relaterat. Mitt fokus ligger
 							på Front-End utveckling men plockar även upp en del Back-End på
 							vägen i mitt lärande. För tillfället så tar jag gärna på mig
-							frilansarbete i olika storlekar och former. <br/> Har du några
+							frilansarbete i olika storlekar och former. <br /> Har du några
 							funderingar så tveka inte att fylla i kontaktformuläret nedan.
 						</p>
 					</div>
@@ -34,7 +39,7 @@ const MainCard = () => {
 					className={"col-12 flex"}
 					style={{ marginTop: "25px", justifyContent: "space-between" }}
 				>
-					<div className={"contact-list col-3 flex center col"}>
+					<div className={"contact-list col-3 flex col"}>
 						<ul>
 							<li>
 								<a href="https://www.facebook.com/niklas.albinsson">
@@ -68,3 +73,13 @@ const MainCard = () => {
 };
 
 export default MainCard;
+
+export const pageQuery = graphql`
+	query ProfileImageQuery {
+		profileImage: imageSharp(id: { regex: "/profil/" }) {
+			sizes(maxWidth: 938) {
+				...GatsbyImageSharpSizes
+			}
+		}
+	}
+`;

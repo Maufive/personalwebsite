@@ -22,9 +22,10 @@
     justify-content: center;
     margin-right: 5vw;
     .avatar {
-        width: 100%;
         border-radius: 50%;
         background: #3b5998;
+        width: 200px;
+        height: 200px;
     }
 }
 
@@ -33,6 +34,7 @@
 }
 
 .contact-list {
+    padding: 2vh 0;
     ul {
         width: 150px;
         li {
@@ -60,6 +62,13 @@
 }
 .twitter-icon:hover {
     color: #1da1f2;
+}
+
+@media (min-width: 1600px) {
+    .contact-list {
+        padding: 3vh 0;
+        align-items: center;
+    }
 }
 
 @media (max-width: $tablet-breakpoint) {

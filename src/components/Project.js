@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "gatsby-link";
+import Img from "gatsby-image";
 import FaGlobe from 'react-icons/lib/fa/globe';
 import FaGithub from 'react-icons/lib/fa/github';
 import FaTag from 'react-icons/lib/fa/tag';
@@ -12,7 +13,10 @@ const Project = ({ props }) => ({
 					<h1 className={"main-heading"}>{this.props.title}</h1>
 					<div className={"project-background"}>
 						<a href={this.props.demoLink} target="_BLANK">
-							<img src={this.props.imageUrl} />
+							<Img
+									sizes={this.props.image.sizes}
+									className={'project-image'}
+							/>
 						</a>
 					</div>
 					<div className={'flex button-container'}>
