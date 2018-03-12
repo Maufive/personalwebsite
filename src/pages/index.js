@@ -32,7 +32,7 @@ const MainCard = () => {
 				</div>
 				<div
 					className={"col-12 flex"}
-					style={{ marginTop: "50px", justifyContent: "space-between" }}
+					style={{ marginTop: "25px", justifyContent: "space-between" }}
 				>
 					<div className={"contact-list col-3 flex center col"}>
 						<ul>
@@ -68,19 +68,3 @@ const MainCard = () => {
 };
 
 export default MainCard;
-
-/* <div className={"contact-list flex"}>
-	<span>Kontakt: </span>
-	<a href="mailto:albinssonniklas@gmail.com">
-		<TiMail className={"mail-icon"} />
-	</a>
-	<a href="https://github.com/Maufive/">
-		<TiGithub className={"github-icon"} />
-	</a>
-	<a href="https://www.facebook.com/niklas.albinsson">
-		<TiFacebook className={"facebook-icon"} />
-	</a>
-	<a href="#">
-		<TiTwitter className={"twitter-icon"} />
-	</a>
-</div> */

@@ -6,26 +6,27 @@ class ContactForm extends Component {
 		return (
 			<form
 				name="contact"
-				method="POST"
-				action="thank-you"
-				netlify
 				id="contact-form"
+				method="POST"
+				data-netlify="true"
 			>
 				<div className={"contact-form-section"}>
 					<label>Ditt namn:</label>
-					<input required type="text" name="namn" />
+					<input required type="text" name="name" />
 				</div>
 				<div className={"contact-form-section"}>
 					<label>Din mail:</label>
-					<input required type="email" name="mail" />
+					<input required type="email" name="email" />
 				</div>
 				<div className={"contact-form-section"}>
 					<label>Ditt meddelande:</label>
-					<textarea required name="meddelande" cols="30" rows="3" />
+					<textarea required name="message" cols="30" rows="3" />
 				</div>
 				<div netlify-recaptcha />
 				<div className={"contact-form-section"}>
-					<button type="submit"><FaMail /> Skicka</button>
+					<button type="submit">
+						<FaMail /> Skicka
+					</button>
 				</div>
 			</form>
 		);
@@ -33,16 +34,3 @@ class ContactForm extends Component {
 }
 
 export default ContactForm;
-
-/* <form name="contact" method="POST" action="thank-you" netlify>
-  <div>
-    <label>Email: <input type="text" name="name"></label>
-  </div>
-  <div>
-    <label>Message: <textarea name="message"></textarea></label>
-  </div>
-  <div netlify-recaptcha></div>
-  <div>
-    <button type=”submit”>Send</button>
-  </div>
-</form> */
