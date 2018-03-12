@@ -5,7 +5,6 @@ import FaFacebook from "react-icons/lib/fa/facebook";
 import FaTwitter from "react-icons/lib/fa/twitter";
 import FaInstagram from "react-icons/lib/fa/instagram";
 import FaCheck from "react-icons/lib/fa/check";
-import Profilbild from "../img/profil.jpg";
 import ContactForm from "../layouts/ContactForm";
 
 const MainCard = ({ data }) => {
@@ -13,12 +12,11 @@ const MainCard = ({ data }) => {
 		<div className="index-page">
 			<div className={"container col flex main-card"}>
 				<div className="bio-container col-12 flex">
-					<div className={"avatar-container"}>
+					<div className={"avatar-container col-3"}>
 						<Img
 							className={'avatar'}
 							sizes={data.profileImage.sizes}
 						/>
-						{console.log(data.profileImage.sizes)}
 					</div>
 					<div className={"col flex col-8"}>
 						<h1 className={"main-heading"}>Niklas Albinsson</h1>

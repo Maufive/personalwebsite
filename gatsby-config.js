@@ -28,6 +28,7 @@ module.exports = {
 		`gatsby-transformer-remark`,
 		`gatsby-plugin-glamor`,
 		`gatsby-transformer-sharp`,
-		`gatsby-plugin-sharp`
+		`gatsby-plugin-sharp`,
+		`gatsby-plugin-react-helmet`
 	]
 };

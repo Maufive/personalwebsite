@@ -6,7 +6,6 @@ const Portfolio = ({ data }) => ({
 		return (
 			<div className={"portfolio-page flex"}>
 				<div className="projects container flex col-8">
-					{console.log(data)}
 					<Project
 						title={"GOAT TV"}
 						description={
