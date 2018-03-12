@@ -1,38 +1,66 @@
 import React from "react";
-import TiMail from "react-icons/lib/ti/mail";
-import TiGithub from "react-icons/lib/ti/social-github";
-import TiFacebook from "react-icons/lib/ti/social-facebook";
-import TiTwitter from "react-icons/lib/ti/social-twitter";
-import ProfilePic from "../img/profil.jpeg";
+import FaGithub from "react-icons/lib/fa/github";
+import FaFacebook from "react-icons/lib/fa/facebook";
+import FaTwitter from "react-icons/lib/fa/twitter";
+import FaInstagram from "react-icons/lib/fa/instagram";
+import FaCheck from "react-icons/lib/fa/check";
+import Profilbild from "../img/profil.jpg";
+import ContactForm from "../layouts/ContactForm";
 
 const MainCard = () => {
 	return (
-		<div className={"container flex center main-card"}>
-			<div className={"col-2"}>
-				<img className={"avatar"} src={ProfilePic} />
-			</div>
-			<div className={"bio-container flex col-8"}>
-				<h1 className={"main-heading"}>Niklas Albinsson</h1>
-				<h3 className={"sub-heading"}>JavaScript Utvecklare</h3>
-				<p>
-					Jag gillar att bygga hemsidor, appar och annat web-relaterat. Skriv
-					någon mer personlig info om mig själv här. Borde inte vara mycket
-					längre än såhär.
-				</p>
-				<div className={"contact-list flex"}>
-					<span>Kontakt: </span>
-					<a href="mailto:albinssonniklas@gmail.com">
-						<TiMail className={"mail-icon"} />
-					</a>
-					<a href="https://github.com/Maufive/">
-						<TiGithub className={"github-icon"} />
-					</a>
-					<a href="https://www.facebook.com/niklas.albinsson">
-						<TiFacebook className={"facebook-icon"} />
-					</a>
-					<a href="#">
-						<TiTwitter className={"twitter-icon"} />
-					</a>
+		<div className="index-page">
+			<div className={"container col flex main-card"}>
+				<div className="bio-container col-12 flex">
+					<div className={"avatar-container col-3"}>
+						<img className={"avatar"} src={Profilbild} />
+					</div>
+					<div className={"col flex col-8"}>
+						<h1 className={"main-heading"}>Niklas Albinsson</h1>
+						<h3 className={"sub-heading"}>Javascript Utvecklare</h3>
+						<p>
+							Hej! 👋 Här hittar du mitt portfolio där jag visar upp olika
+							web-appar och hemsidor jag byggt samt en blogg där jag skriver om
+							mina bedrifter. Jag är en självlärd webutvecklare från Umeå som
+							skapar hemsidor, appar och annat web-relaterat. Mitt fokus ligger
+							på Front-End utveckling men plockar även upp en del Back-End på
+							vägen i mitt lärande. För tillfället så tar jag gärna på mig
+							frilansarbete i olika storlekar och former. <br/> Har du några
+							funderingar så tveka inte att fylla i kontaktformuläret nedan.
+						</p>
+					</div>
+				</div>
+				<div
+					className={"col-12 flex"}
+					style={{ marginTop: "50px", justifyContent: "space-between" }}
+				>
+					<div className={"contact-list col-3 flex center col"}>
+						<ul>
+							<li>
+								<a href="https://www.facebook.com/niklas.albinsson">
+									<FaFacebook /> Facebook
+								</a>
+							</li>
+							<li>
+								<a href="https://github.com/Maufive/">
+									<FaGithub /> Github
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<FaTwitter /> Twitter
+								</a>
+							</li>
+							<li>
+								<a href="https://www.instagram.com/niklasalbinsson/">
+									<FaInstagram /> Instagram
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div className={"col-8 flex center contact-form"}>
+						<ContactForm />
+					</div>
 				</div>
 			</div>
 		</div>
@@ -40,3 +68,19 @@ const MainCard = () => {
 };
 
 export default MainCard;
+
+/* <div className={"contact-list flex"}>
+	<span>Kontakt: </span>
+	<a href="mailto:albinssonniklas@gmail.com">
+		<TiMail className={"mail-icon"} />
+	</a>
+	<a href="https://github.com/Maufive/">
+		<TiGithub className={"github-icon"} />
+	</a>
+	<a href="https://www.facebook.com/niklas.albinsson">
+		<TiFacebook className={"facebook-icon"} />
+	</a>
+	<a href="#">
+		<TiTwitter className={"twitter-icon"} />
+	</a>
+</div> */

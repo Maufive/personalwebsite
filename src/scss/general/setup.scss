@@ -12,6 +12,11 @@ body {
     font-family: 'Lato', Arial, Helvetica, sans-serif;
 }
 
+p::selection, h1::selection, h2::selection, h3::selection, h4::selection {
+    color: palevioletred;
+    background: #3a3a3a;
+}
+
 article,
 aside,
 details,
@@ -261,7 +266,7 @@ img {
     padding-left: 0;
     padding-right: 0;
     padding-top: 0;
-    margin-bottom: 1.45rem;
+    margin-bottom: 0;
 }
 
 h1, h2, h3 {
@@ -504,7 +509,7 @@ form {
     padding-left: 0;
     padding-right: 0;
     padding-top: 0;
-    margin-bottom: 1.45rem;
+    margin-bottom: 0;
 }
 
 noscript {

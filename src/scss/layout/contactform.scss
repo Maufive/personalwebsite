@@ -1,0 +1,33 @@
+#contact-form {
+  width: 100%;
+}
+
+.contact-form-section {
+  display: flex;
+  flex-direction: column;
+  margin: 1vh 0;
+  input[type=text], input[type=email], textarea {
+    background: $off-white;
+    border: none;
+    padding: 5px 10px;
+  }
+  input[type=text]:focus, input[type=email]:focus, textarea:focus {
+    outline: 2px solid $primary-accent;
+    // box-shadow: $box-shadow;
+  }
+  button {
+    margin: 10px auto;
+    border-radius: 5px;
+    background: $primary-accent;
+    border: none;
+    color: $off-white;
+    width: 50%;
+    svg {
+      margin: 0 5px 4px 0;
+    }
+  }
+  button:hover {
+    cursor: pointer;
+  }
+
+}

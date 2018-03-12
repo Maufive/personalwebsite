@@ -15,21 +15,19 @@
 }
 
 .Navigation {
-    width: 300px;
+    
     .nav-list {
         margin: 0;
         display: flex;
         justify-content: space-around;
         align-items: center;
         list-style: none;
-        .nav-item {
-            margin: 0;
-        }
-        .nav-item a {
+
+        a {
             margin: 0 10px;
             transition: all 0.2s ease-out;
         }
-        .nav-item a:hover {
+        a:hover {
             color: palevioletred;
         }
     }
@@ -47,4 +45,77 @@
 
 a, a:visited {
     color: $off-black;
+}
+
+.mobile-nav {
+    display: none;
+    align-items: center;
+}
+
+.mobile-nav-container {
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: rgba($off-black, 0.95);
+    height: 100vh;
+    width: 100%;
+    padding: 25px 10px;
+    display: flex;
+    justify-content: space-between;
+    a {
+        color: $off-white;
+        font-size: 2.5rem;
+        font-weight: 700;
+        letter-spacing: 2px;
+    }
+    ul {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        li {
+            margin: 5vh 0;
+            .active-link {
+                color: $primary-accent;
+            }
+        }
+    }
+}
+
+.open {
+    animation: slideRight 500ms;
+}
+
+.closed {
+    display: none;
+}
+
+.mobile-nav-icon {
+    color: $off-white;
+    font-size: 1.5rem;
+}
+.dark {
+    color: $off-black;
+}
+
+@media (max-width: $mobile-breakpoint) {
+    .Header {
+        padding: 0 10px;
+    }
+    .Navigation > .desktop a {
+        font-size: 14px;
+    }
+    .desktop.nav-list {
+        display: none;
+    }
+    .brand-name {
+        font-size: 16px;
+    }
+    .mobile-nav {
+        display: flex;
+    }
+    .Navigation {
+        width: fit-content;
+    }
 }

@@ -1,49 +1,33 @@
 import React from "react";
 import Link from "gatsby-link";
-import TiGithub from "react-icons/lib/ti/social-github";
-// import IoCss from 'react-icons/lib/io/social-css3';
+import FaGlobe from 'react-icons/lib/fa/globe';
+import FaGithub from 'react-icons/lib/fa/github';
+import FaTag from 'react-icons/lib/fa/tag';
 
 const Project = ({ props }) => ({
 	render() {
 		return (
-			<div className={"project-container col-12 flex"}>
-				<div className="tablet-info">
-					<ul>
-						{this.props.tech.map(tech => <li>{tech}</li>)}
-						<div className={"button-div"}>
-							<a className={"project-link"} href={this.props.gitLink}>
-								GitHub
-								<TiGithub />
-							</a>
-							<a className={"project-link primary"} href={this.props.demoLink}>
-								Demo
-							</a>
-						</div>
-					</ul>
-				</div>
-				<div className={"pointy"} />
-				<div className={"project-item"}>
-					<h1>{this.props.title}</h1>
+			<div className={"project-item"}>
+				<div>
+					<h1 className={"main-heading"}>{this.props.title}</h1>
 					<div className={"project-background"}>
-						<img src={this.props.imageUrl} />
-						<div className={"project-overlay"}>
-							<ul>{this.props.tech.map(tech => <li>{tech}</li>)}</ul>
-							<div className={"button-div"}>
-								<a className={"project-link"} href={this.props.gitLink}>
-									GitHub
-									<TiGithub />
-								</a>
-								<a
-									className={"project-link primary"}
-									href={this.props.demoLink}
-								>
-									Demo
-								</a>
-							</div>
-						</div>
+						<a href={this.props.demoLink} target="_BLANK">
+							<img src={this.props.imageUrl} />
+						</a>
+					</div>
+					<div className={'flex button-container'}>
+						<a href={this.props.demoLink} target="_BLANK"><FaGlobe /> Testa live!</a>
+						<a href={this.props.gitLink} target="_BLANK"><FaGithub /> GitHub</a>
+					</div>
+					<div>
+						<p>{this.props.description}</p>
+					</div>
+					<div>
+						{this.props.tags.map(tag => (
+							<span className="project-tag" key={tag.id}><FaTag /> {tag}</span>
+						))}
 					</div>
 				</div>
-				<div className="project-date">{this.props.date}</div>
 			</div>
 		);
 	}

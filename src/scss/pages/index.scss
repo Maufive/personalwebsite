@@ -8,40 +8,43 @@
 }
 
 .main-card {
-    width: 60%;
-    height: 400px;
-    margin-top: 15vh;
+    width: 70vw;
+    margin: 15vh auto;
     box-shadow: $box-shadow;
     animation: slideDown 1s;
-    animation-fill-mode: both;
     justify-content: space-around;
+    padding: 50px;
 }
 
-.avatar {
-    border-radius: 5px;
-    // animation: portraitSlideLeft 0.8s 0.5s;
-    // animation-fill-mode: both;
+.avatar-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5vw;
+    .avatar {
+        width: 100%;
+        border-radius: 50%;
+        background: #3b5998;
+    }
 }
-
 
 .bio-container {
-    flex-direction: column;
+    justify-content: center;
 }
 
 .contact-list {
-    padding: 10px 5px;
-    span {
-        font-weight: 700;
-        margin-right: 10px;
-    }
-    a {
-        margin: 0 10px;
-        padding: 0;
-        display: flex;
-        svg {
-            height: 25px;
-            width: 25px;
+    ul {
+        width: 150px;
+        li {
+            font-weight: 700;
             transition: all 0.2s ease-out;
+            svg {
+                margin-right: 10px;
+                color: $primary-accent;
+            }
+        }
+        li:hover {
+            padding-left: 5px;
         }
     }
 }
@@ -59,33 +62,25 @@
     color: #1da1f2;
 }
 
-@media (min-width: 1281px) {
+@media (max-width: $tablet-breakpoint) {
     .main-card {
-        width: 50%;
+        width: 85vw;
     }
-}
-
-@media (max-width: 1198) {
-  .about-page.about {
+    .about-page.about {
     width: 800px;
   }
 }
 
-@media (max-width: 1000px) {
-    .main-card {
-        width: 80%;
-    }
-}
-
-@media (max-width: 768px) {
-    .Header {
-        a, .brand-name {
-            font-size: 14px;
-        }
+@media (max-width: $mobile-breakpoint) {
+    .index-page {
+        padding: 10px;
     }
     .main-card {
         flex-direction: column;
         height: 100%;
+        width: 100%;
+        margin: 0;
+        padding: 20px;
     }
     .main-heading {
         margin: 10px 0;
@@ -93,6 +88,26 @@
     }
     .bio-container {
         align-items: center;
-        width: 83.333%;
+        width: 100%;
+        flex-direction: column;
+        .avatar-container {
+            margin-right: 0;
+            margin-bottom: 5vh;
+            width: 175px;
+        }
+        .col-8 {
+            align-items: center;
+            width: 100%;
+        }
     }
+    .contact-list {
+        display: none;
+    }
+    .contact-form {
+        width: 100%;
+    }
+}
+
+@media (max-width: $small-mobile-breakpoint) {
+    
 }
