@@ -28,10 +28,11 @@ class ContactForm extends Component {
 			<form
 				name="contact"
 				method="post"
-				action="/thanks/"
+				action="/../layouts/thanks/"
 				data-netlify="true"
 				data-netlify-honeypot="bot-field"
 				onSubmit={this.handleSubmit}
+				id="contact-form"
 			>
 				<div className={"contact-form-section"}>
 					<label>Ditt namn:</label>
