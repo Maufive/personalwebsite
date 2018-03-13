@@ -24,7 +24,6 @@ export default ({ data }) => {
 								<p>{node.excerpt}</p>
 								{/* Excerpt = utdraget för varje bloginlägg */}
 							</Link>
-							{/* <div className="divider" /> */}
 						</div>
 					))}
 				</div>

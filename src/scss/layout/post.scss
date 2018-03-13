@@ -24,6 +24,12 @@
   }
 }
 
+@media (max-width: $mobile-breakpoint) {
+  code {
+    font-size: 0.7rem;
+  }
+}
+
 @media (max-width: 630px) {
   .blog-page {
     padding: 10px!important;

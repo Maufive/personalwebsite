@@ -20,9 +20,9 @@ const MainCard = ({ data }) => {
 					</div>
 					<div className={"col flex col-8"}>
 						<h1 className={"main-heading"}>Niklas Albinsson</h1>
-						<h3 className={"sub-heading"}>Javascript Utvecklare</h3>
+						<h3 className={"sub-heading"}>Javascript-utvecklare</h3>
 						<p>
-							Hej! 👋 Här hittar du mitt portfolio där jag visar upp olika
+							Hej! 👋 Här hittar du min portfolio där jag visar upp olika
 							web-appar och hemsidor jag byggt samt en blogg där jag skriver om
 							mina bedrifter. Jag är en självlärd webutvecklare från Umeå som
 							skapar hemsidor, appar och annat web-relaterat. Mitt fokus ligger

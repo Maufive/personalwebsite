@@ -39,38 +39,11 @@ export default MainPage;
 export const pageQuery = graphql`
     // graphql query 
 `;
-
 ```
 
 Ungefär såhär ser min index.js ut som ligger under pages-mappen. Att passa in data-objektet är bara nödvändigt ifall du ska göra en GraphQL query till databasen. Det var ingenting jag använde mig utav till en början, ända tills jag upptäckte hur mycket bättre det var att ladda in mina bilder med hjälp av Gatsby-image och GraphQL istället för vanliga ```<img>```-taggar. Detta hjälpte min prestanda oerhört mycket, och ser definitivt mycket bättre ut att bilderna får "blurra" in så användaren får feedback på att det faktiskt finns en bild. Nu snackar vi kanske om max 1-2 sekunder, men på dåliga mottagnigar i mobilen kan det definitvt bli mycket längre väntetider. 
 
-Ännu så har jag bara fått en liten provsmakning av alla möjligheter som finns med GraphQL, då jag hittils bara använder det för att ladda in mina bilder samt loopar över mina blogginlägg. Blogginläggen är skrivna som Markdown-filer som jag queryar med GraphQL som i sin tur skickar över datan till Gatsby via ett plugin. Min query för blogginläggen ser ut såhär:
-
-```
-export const query = graphql`
-	query IndexQuery {
-		allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
-			totalCount
-			edges {
-				node {
-					id
-					timeToRead
-					frontmatter {
-						title
-						date(formatString: "DD MMMM, YYYY")
-						tags
-					}
-					fields {
-						slug
-					}
-					excerpt
-				}
-			}
-		}
-	}
-`;
-
-```
+Ännu så har jag bara fått en liten provsmakning av alla möjligheter som finns med GraphQL, då jag hittils bara använder det för att ladda in mina bilder samt loopar över mina blogginlägg. Blogginläggen är skrivna som Markdown-filer som jag queryar med GraphQL som i sin tur skickar över datan till Gatsby via ett plugin. 
 
 *** 
 
