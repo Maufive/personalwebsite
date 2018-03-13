@@ -46,7 +46,7 @@ Ungefär såhär ser min index.js ut som ligger under pages-mappen. Att passa in
 
 Ännu så har jag bara fått en liten provsmakning av alla möjligheter som finns med GraphQL, då jag hittils bara använder det för att ladda in mina bilder samt loopar över mina blogginlägg. Blogginläggen är skrivna som Markdown-filer som jag queryar med GraphQL som i sin tur skickar över datan till Gatsby via ett plugin. Min query för blogginläggen ser ut såhär:
 
-````
+```
 export const query = graphql`
 	query IndexQuery {
 		allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
@@ -69,10 +69,11 @@ export const query = graphql`
 		}
 	}
 `;
+
 ```
 
-***
+*** 
 
-Något jag gärna skulle vilja utforska närmare är hur man kan få sin Gatsby-sida att funka med någon CMS som exempelvis [Contentful](https://wwww.contentful.com), men efter en 5 minuters lusläsning på deras hemsida så verkar det vara ett större projekt att ta tag i än vad jag tidigare misstänkt. Deras 4 olika APIn verkar vara ett helt projekt var för sig.
+Något jag gärna skulle vilja utforska närmare är hur man kan få sin Gatsby-sida att funka med någon CMS som exempelvis [Contentful] (https://wwww.contentful.com), men efter en 5 minuters lusläsning på deras hemsida så verkar det vara ett större projekt att ta tag i än vad jag tidigare misstänkt. Deras 4 olika APIn verkar vara ett helt projekt var för sig.
 
 Nu är ju frågan - vad kommer härnäst? På agendan står att ska jag göra en simpel HTML-sida åt A-Montering vilket inte borde ta mig så lång tid. Efter det så skulle jag verkligen vilja sätta tänderna i ett nytt projekt att fylla ut min portfolio med. Jag har funderat på om jag kanske ska ge Spotifys API en andra svängom och förska lära mig lite mer NodeJS eller om jag kanske hoppar på MeteorJS-tåget. Vi får väl se.
