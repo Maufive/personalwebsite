@@ -12,10 +12,11 @@
     box-sizing: border-box;
     animation: slideDown 1s;
     animation-fill-mode: both;
+    position: relative;
+    z-index: 50;
 }
 
 .Navigation {
-    
     .nav-list {
         margin: 0;
         display: flex;
