@@ -28,7 +28,6 @@ class ContactForm extends Component {
 			<form
 				name="contact"
 				method="post"
-				action="/../layouts/thanks/"
 				data-netlify="true"
 				data-netlify-honeypot="bot-field"
 				onSubmit={this.handleSubmit}
@@ -36,11 +35,11 @@ class ContactForm extends Component {
 			>
 				<div className={"contact-form-section"}>
 					<label>Ditt namn:</label>
-					<input required type="text" name="name" onChange={this.handleChange}/>
+					<input required type="text" name="Name" onChange={this.handleChange}/>
 				</div>
 				<div className={"contact-form-section"}>
 					<label>Din mail:</label>
-					<input required type="email" name="email" onChance={this.handleChange}/>
+					<input required type="email" name="Email" onChance={this.handleChange}/>
 				</div>
 				<div className={"contact-form-section"}>
 					<label>Ditt meddelande:</label>
